@@ -21,8 +21,8 @@
         </ul>
     </nav>
 </header>
-        <div class="main">
-        <div class="interface">
+    <div class="main">
+    <div class="interface">
          <img src="Imagens/1.png" alt="">
             <div class="topicos">
                 <div class="timeline">
@@ -99,26 +99,55 @@
                   </div>
                   </div>
 
-                <h1>A contribuição Africana na cultura brasileira</h1>
+                <h1>A contribuição Africana na cultura brasileira</h1> 
                 <h2>Música e Dança:</h2>
-                <p>O Samba: O samba, um gênero musical e dança brasileiro, é um elemento representativo da cultura popular do Brasil. Resultado da fusão entre influências musicais africanas e europeias nos contextos rurais e urbanos, o samba assume variações regionais em todo o país, preservando sua alegria e cadência envolvente.</p>
-                <br>
-                <p>O samba, originado no Brasil, resulta da fusão dos batuques africanos com ritmos europeus como polca e valsa. Inicialmente chamadas de "samba", as festas dos negros escravos no Recôncavo Baiano foram marcadas por danças em roda.
-                   Após a abolição da escravidão em 1888, muitos negros migraram para o Rio de Janeiro, onde as manifestações culturais africanas, incluindo o samba, eram desconfiadas. As festas passaram a ocorrer nas casas de matriarcas afro-descendentes, como Tia Ciata, mãe de santo carioca.</p>
-                <h2>Religião:</h2>
-                <p>?</p>
-                <h2>Culinária:</h2>
-                <p>?</p>
-                <h2>Linguagem:</h2>
+               
+                <!-- Seção das três primeiras imagens -->
+                <div class="primeiras-imagens">
+                  <div class="imagem-container">
+                    <h2>Samba</h2>
+                    <img src="Imagens\samba.jpg" alt="Descrição da imagem 1">
+                    <button class="mostrar-descricao" data-target="descricao1">Mostrar Descrição</button>
+                    <p class="descricao" id="descricao1">O samba, um gênero musical e dança brasileiro, é um elemento representativo da cultura popular do Brasil. Resultado da fusão entre influências musicais africanas e europeias nos contextos rurais e urbanos, o samba assume variações regionais em todo o país, preservando sua alegria e cadência envolvente.
+                    </p>
+                  </div>
+                  <div class="imagem-container">
+                    <h2>Candomblé</h2>
+                    <img src="Imagens\camd.jpg" alt="Descrição da imagem 2">
+                    <button class="mostrar-descricao" data-target="descricao2">Mostrar Descrição</button>
+                    <p class="descricao" id="descricao2">O samba, um gênero musical e dança brasileiro, é um elemento representativo da cultura popular do Brasil. Resultado da fusão entre influências musicais africanas e europeias nos contextos rurais e urbanos, o samba assume variações regionais em todo o país, preservando sua alegria e cadência envolvente.
+                    </p>
+                  </div>
+                  <div class="imagem-container">
+                    <h2>Capoeira</h2>
+                    <img src="Imagens\capu.png" alt="Descrição da imagem 3">
+                    <button class="mostrar-descricao" data-target="descricao3">Mostrar Descrição</button>
+                    <p class="descricao" id="descricao3">O samba, um gênero musical e dança brasileiro, é um elemento representativo da cultura popular do Brasil. Resultado da fusão entre influências musicais africanas e europeias nos contextos rurais e urbanos, o samba assume variações regionais em todo o país, preservando sua alegria e cadência envolvente.
+                    </p>
+                  </div>
+                </style>
 
-                
-                <ul>
-                    <li>Cultura</li>
-                    <li>Musicas</li>
-                    <li>...</li>
-                    <li>...</li>
-                </ul>
-
+                <script>
+                 const botoes = document.querySelectorAll('.mostrar-descricao');
+                botoes.forEach(botao => {
+                  botao.addEventListener('click', function() {
+                    const targetDescricaoId = this.getAttribute('data-target');
+                    const descricao = document.getElementById(targetDescricaoId);
+                    
+                    // Alternar a exibição da descrição correspondente ao botão clicado
+                    if (descricao.style.display === 'none') {
+                      descricao.style.display = 'block';
+                      this.textContent = 'Esconder Descrição';
+                    } else {
+                      descricao.style.display = 'none';
+                      this.textContent = 'Mostrar Descrição';
+                    }
+                  });
+                });
+                </script>
+                </div>
+               
+        
                 <h1> O Genocídio da população negra no Brasil</h1>
                 <div class="t2">
                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus, distinctio, magnam error quis dolores corporis minus, reprehenderit cumque dolorem qui sit perspiciatis atque temporibus non modi consequuntur necessitatibus assumenda.</p>
@@ -154,14 +183,9 @@
                 <h1> As políticas públicas atuais relacionadas a igualdade racial no Brasil</h1>
                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat dolor nam non ratione quas at animi autem consequuntur iure magnam veniam aliquid exercitationem eius, inventore vel maxime nihil laborum?</p>
             </div>
-        </div>
-        </div>*//
+      </div>
+      </div>
 
-        <div class="container">
-            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTp2cPgm_PfSp7Dd5-qBn-5ZBUag843ydwLw&usqp=CAU" alt="Descrição da imagem">
-           <button><a href="#" class="link-icon">Saiba mais</button> 
-              
-            </a>
-          </div>
+       
 </body>
 </html>

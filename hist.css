@@ -1,4 +1,5 @@
 body {
+  background-color: gray;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -101,6 +102,7 @@ body{
     margin-top: 50px;
     background-color: black;
     color: white;
+    margin: 0 auto;
 }
 
 .pergunta{
@@ -177,6 +179,7 @@ body {
     font-size: 14px;
   }
 
+<<<<<<< HEAD
 /*---------------------------------------------*/
 
 body {
@@ -207,3 +210,19 @@ body {
 .photo p {
   margin: 10px 0;
 }
+=======
+  .imagem-container {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+  
+  .imagem-container img {
+    width: 200px; /* Defina o tamanho desejado para as imagens */
+    height: auto;
+  }
+  
+  .descricao {
+    display: none;
+  }
+>>>>>>> 9d87227f326ff2697d57840efd55aa56192967b1
