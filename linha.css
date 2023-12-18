@@ -118,3 +118,31 @@ header {
     max-width: 30%;
     height: auto;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image-item {
+  width: calc(33.33% - 20px); /* Para 3 imagens em uma linha com espaçamento de 20px entre elas */
+  text-align: center;
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-item h2 {
+  margin: 10px 0;
+}
+
