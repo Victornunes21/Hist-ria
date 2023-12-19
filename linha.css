@@ -43,6 +43,7 @@ header {
   .timeline {
     width: 80%;
     margin: 20px auto;
+    font-size: 20px;
   }
   
   ul {
@@ -63,6 +64,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-right: 20px; 
+    font-size: 20px;
   }
   
   .date {
@@ -71,7 +73,7 @@ header {
   }
   
   .description {
-    font-size: 14px;
+    font-size: 17px;
   }
 .imagi img{
      width: 1200px;
