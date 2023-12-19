@@ -21,25 +21,7 @@ header {
   
   }
   
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ffcc00; /* Cor do texto ao passar o mouse */
-  }
+
   .timeline {
     width: 80%;
     margin: 20px auto;
@@ -148,3 +130,31 @@ header {
   margin: 10px 0;
 }
 
+.img img{
+  width: 500px;
+  height: 400px;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.square {
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square h2 {
+  color:red;
+}
+.square p{
+  color: white;
+}
